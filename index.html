@@ -20,13 +20,17 @@ p {
   padding: 30px;
   margin: 40px;
 }
-    ul {
+.navigation-bar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: 17458f;
+  background-color: solid dark blue;
   font-family: Garamond;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
 }
 
 li {
@@ -34,17 +38,23 @@ li {
 }
 
 li a {
-  display: block;
-  color: white;
+  display: inline-block;
+  color: 17458f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  transition:250ms;
   font-size: 150%;
 }
+.navigation-bar {
+  top:0;
+  position:sticky;
+  background: white;
+  }
 
-li a:hover:not(.active) {
-  color: 00a2e0;
+li a:hover {
+  color: #f7a81b;
 }
 #grad1 {
   height: 3500px;
@@ -54,22 +64,33 @@ li a:hover:not(.active) {
 .active {
   color: 00a2e0;
 }
+
+img {
+
+  object-fit: contain;
+}
 </style>
 </head>
 
 
-<body background-image: linear-gradient(b9d9eb, 17458f)>
-  <br>
-  <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="page2.html">About NA Interact</a></li>
-  <li><a href="page3.html">Current Projects</a></li>
-  <li><a href="page4.html">Sign Up for Projects</a></li>
-  <li><a href="page5.html">Early Act</a></li>
-</ul>
+<body>
+<br>
+  <div class="navigation-bar">
+
+        <div id="navigation-container"> 
+            <ul>
+                <li><a> <img src="https://nainteract.github.io/assets/css/logo.png" width="175"> </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About NA Interact</a></li>
+                <li><a href="page3.html">Current Projects</a></li>
+                <li><a href="page4.html">Sign up for Projects</a></li>
+                <li><a href="page5.html">Early Act</a></li>
+              
+            </ul>
+        </div>
+    </div>
 <div id="grad1">
-<img src="https://nainteract.github.io/assets/css/logo.png" width="50%" align="left">
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 <h1 align="center">Welcome to the new website for NA Interact! We're working on uploading content and this page will be continuously updated. Please check back periodically for new events. Thank you!</h1>
 <h2 align="center">Club Signup Form 24-25</h2>
 
@@ -80,4 +101,3 @@ li a:hover:not(.active) {
 <footer align="center"> Copyright &copy 2024 by the NASH Interact Officer Team </footer>
 </div>
 </html>
-
